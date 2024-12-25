@@ -15,7 +15,20 @@
 }
 
 body {
-  color: var(--foreground);
+  color: var(--background);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  width: 834px;
+  height: 1194px;
+  background-color: var(--foreground);
 }
