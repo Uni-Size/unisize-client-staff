@@ -3,15 +3,14 @@ import useRepairPopup from "@/customHooks/useRepairPopup";
 
 export default function UniformSet() {
   const [isWinter, setIsWinter] = useState(true);
-  const [isPopup, setIsPopup] = useState(true);
+  const [isPopup, setIsPopup] = useState(false);
   const handlerShowPopup = () => {
     setIsPopup((prev) => !prev);
   };
   const popupContent = useRepairPopup("HJ1", isPopup, handlerShowPopup);
   return (
     <div>
-      {popupContent}
-      <div>
+      <div className="">
         <label className="w-1/3 h-16 block relative rounded-md bg-neutral-400 cursor-pointer overflow-hidden">
           <input
             type="checkbox"
@@ -61,6 +60,7 @@ export default function UniformSet() {
           </ul>
         </div>
       </div>
+      {popupContent}
     </div>
   );
 }

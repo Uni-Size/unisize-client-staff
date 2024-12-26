@@ -3,7 +3,7 @@
 import AccSet from "@/components/AccSet";
 import NameTagSet from "@/components/NameTagSet";
 import UniformSet from "@/components/UniformSet";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 export default function Page() {
   const [activeStepper, isActiveStepper] = useState<number>(0);
