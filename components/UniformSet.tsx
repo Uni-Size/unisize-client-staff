@@ -10,7 +10,7 @@ export default function UniformSet() {
   const popupContent = useRepairPopup("HJ1", isPopup, handlerShowPopup);
   return (
     <div>
-      {isPopup && popupContent}
+      {popupContent}
       <div>
         <label className="w-1/3 h-16 block relative rounded-md bg-neutral-400 cursor-pointer overflow-hidden">
           <input
